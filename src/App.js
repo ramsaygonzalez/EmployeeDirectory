@@ -1,10 +1,10 @@
 import React from 'react';
-import EmployeeList from '../src/components/Employee/employeelist'
 import './App.css';
+import Employees from './components/pages/Employees';
 
 function App() {
-  return (
-    
+  return (<Employees />
+
   );
 }
 
