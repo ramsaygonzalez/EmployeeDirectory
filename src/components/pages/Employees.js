@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Row, Col, Container, Jumbotron, Form } from 'react-bootstrap';
 import API from "../../utils/API"
 import EmployeeList from "../employeelist";
 
@@ -18,9 +19,29 @@ class Employees extends Component {
     }
     render() {
         return (
-            
-            <div><EmployeeList /></div>
-            
+            <div>
+                <Container>
+                    <Row>
+                        <Col lg={12}>
+                            <Jumbotron fluid>
+                                <Container>
+                                    <h1 style={{ textAlignVertical: "center", textAlign: "center", }}>Emplpoyee Directory</h1>
+                                    <p style={{ textAlignVertical: "center", textAlign: "center", }}>
+                                        Click on carrots to filter heading or use the search box to narrow your results.
+    </p>
+                                    <Form>
+                                        <Form.Control style={{ align: "center", width: "30%" }} placeholder="Search" />
+                                    </Form>
+                                </Container>
+                            </Jumbotron>
+                        </Col>
+                    </Row>
+
+                    <Row>
+                        <Col lg={12}><EmployeeList /></Col>
+                    </Row>
+                </Container>
+            </div >
         );
     }
 }
