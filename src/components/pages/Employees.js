@@ -25,7 +25,7 @@ class Employees extends Component {
                         <Col lg={12}>
                             <Jumbotron fluid>
                                 <Container>
-                                    <h1 style={{ textAlignVertical: "center", textAlign: "center", }}>Emplpoyee Directory</h1>
+                                    <h1 style={{ textAlignVertical: "center", textAlign: "center", }}>Employee Directory</h1>
                                     <p style={{ textAlignVertical: "center", textAlign: "center", }}>
                                         Click on carrots to filter heading or use the search box to narrow your results.
     </p>
